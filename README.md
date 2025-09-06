@@ -16,3 +16,4 @@ calculator_project/
 ├── style.css     # Styling (responsive, modern design)
 ├── script.js     # Calculator logic + keyboard handling
 └── README.md     # Project description and instructions
+
