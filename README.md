@@ -1,16 +1,18 @@
 # calculator_project
 A simple, responsive calculator web app built using HTML, CSS, and JavaScript. It performs basic arithmetic operations and supports both button clicks and keyboard input. 
 
-Features
+Features:
+
 Basic operations: Addition (+), Subtraction (−), Multiplication (×), Division (÷)
 Additional functions: Clear (C), Backspace (⌫), Percent (%)
 
-Decimal number support
+Decimal number support:
+
 Keyboard support – use numbers, operators (+ − × ÷), Enter (=), Backspace, and C to clear
 Responsive layout for mobile and desktop
 Clean, modern UI
 
-Project Structure
+Project Structure:
 
 calculator_project/
 
