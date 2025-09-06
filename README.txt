@@ -14,5 +14,3 @@ Features:
 - Decimal support
 - Percent, Clear, Backspace
 - Keyboard input (numbers, + - * /, Enter for =, Backspace, c to clear)
-
-Created by ChatGPT.
