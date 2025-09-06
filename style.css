@@ -1,0 +1,99 @@
+/* Simple modern calculator styles */
+:root{
+  --bg:#0f1724;
+  --panel:#0b1220;
+  --accent:#00d1b2;
+  --btn:#111827;
+  --muted:#94a3b8;
+  --glass: rgba(255,255,255,0.03);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(180deg, #071024 0%, #081226 100%);
+  color: #e6eef8;
+  padding:24px;
+}
+
+.calculator{
+  width:360px;
+  max-width:100%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:16px;
+  padding:18px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.display{
+  height:84px;
+  background:var(--panel);
+  border-radius:12px;
+  padding:18px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  font-size:32px;
+  font-weight:600;
+  color: #eef6fb;
+  margin-bottom:14px;
+  overflow:hidden;
+  word-break:break-all;
+}
+
+.keys{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:10px;
+}
+
+.btn{
+  background:var(--glass);
+  border: none;
+  padding:16px;
+  border-radius:10px;
+  font-size:18px;
+  cursor:pointer;
+  color:var(--muted);
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
+  transition: transform .06s ease, background .08s;
+  user-select:none;
+}
+
+.btn:active{ transform: translateY(1px) scale(.997) }
+
+.btn.operator{
+  background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(255,255,255,0.02));
+  color: #fff;
+  font-weight:600;
+}
+
+.btn.function{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08));
+  color: var(--muted);
+}
+
+.btn.equals{
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+  background: linear-gradient(180deg, var(--accent), rgba(0,208,170,0.9));
+  color:#042022;
+  font-weight:700;
+  font-size:20px;
+}
+
+.btn.wide{
+  grid-column: 1 / 3;
+}
+
+@media (max-width:420px){
+  .calculator{ width:100%; padding:12px }
+  .display{ height:72px; font-size:28px; padding:12px }
+  .btn{ padding:12px; font-size:16px }
+}
