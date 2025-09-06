@@ -11,9 +11,14 @@ Responsive layout for mobile and desktop
 Clean, modern UI
 
 Project Structure
+
 calculator_project/
+
 ├── index.html    # Main page (UI structure)
+
 ├── style.css     # Styling (responsive, modern design)
+
 ├── script.js     # Calculator logic + keyboard handling
+
 └── README.md     # Project description and instructions
 
