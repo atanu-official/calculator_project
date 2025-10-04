@@ -5,10 +5,6 @@ Files:
 - style.css   : styling
 - script.js   : calculator logic + keyboard support
 
-How to run:
-1. Unzip the project.
-2. Open index.html in your browser.
-
 Features:
 - Basic arithmetic: + - × ÷
 - Decimal support
